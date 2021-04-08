@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+/**** Header ****/
+.logo {
+  max-width: 35%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-crypto {
+  max-width: 60px;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-weight: bolder;
+  color: rgb(150, 150, 151);
+  letter-spacing: 7px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column-1,
+.column-2,
+.column-3 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-calendar-picker-indicator {
+  background-image: url(/src/components/calendar.png);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-date {
+  width: 100%;
+}
+
+/**** Cryptocurrencies ****/
+
+.values {
+  margin-top: 1rem;
+}
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.coin-data {
+  display: flex;
+  justify-content: center;
+}
+
+.coin-name {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.coin-price {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.euro {
+  font-size: large;
+  color: rgb(164, 165, 168);
+  font-weight: normal;
+}
+
+.head-crypto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.column-crypto {
+  border: 1px rgb(192, 192, 195) solid;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 2px rgb(150, 150, 151);
+}
+
+/**** Chart ****/
+
+.chart {
+  margin: 2rem 1rem 0 1rem;
+  border: 1px rgb(192, 192, 195) solid;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 2px rgb(150, 150, 151);
+}
+
+@media all and (max-width: 550px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  .values {
+    display: flex;
+    justify-content: center;
+  }
+  .column-crypto {
+    margin-bottom: 2rem;
+  }
+  .row-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+  }
+  .column-2 {
+    order: 3;
+    padding-top: 2rem;
+  }
+
+  .form-date {
+    padding-left: 2rem;
+  }
+
+  .chart {
+    margin-top: 0rem;
   }
 }

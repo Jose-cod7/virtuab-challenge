@@ -1,0 +1,133 @@
+import { format } from "date-fns";
+
+let cryptoInfo = [
+  {
+    id: 1,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: format(new Date(), "yyyy-MM-dd"),
+    price: "59,854.25",
+  },
+  {
+    id: 2,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: format(new Date(), "yyyy-MM-dd"),
+    price: "1,875.21",
+  },
+
+  {
+    id: 3,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: "2021-04-04",
+    price: "46,800.25",
+  },
+  {
+    id: 4,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: "2021-04-04",
+    price: "1,200.21",
+  },
+  {
+    id: 5,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: "2021-04-03",
+    price: "40,423.34",
+  },
+  {
+    id: 6,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: "2021-04-03",
+    price: "1,340.91",
+  },
+  {
+    id: 7,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: "2021-04-02",
+    price: "42,034.76",
+  },
+  {
+    id: 8,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: "2021-04-02",
+    price: "1,287.21",
+  },
+  {
+    id: 9,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: "2021-04-01",
+    price: "44,521.14",
+  },
+  {
+    id: 10,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: "2021-04-01",
+    price: "1,190.71",
+  },
+  {
+    id: 11,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: "2021-03-31",
+    price: "45,504.62",
+  },
+  {
+    id: 12,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: "2021-03-31",
+    price: "1,100.54",
+  },
+  {
+    id: 13,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: "2021-04-05",
+    price: "48,340.25",
+  },
+  {
+    id: 14,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: "2021-04-05",
+    price: "1,350.12",
+  },
+  {
+    id: 15,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: "2021-04-06",
+    price: "50,674.12",
+  },
+  {
+    id: 16,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: "2021-04-06",
+    price: "1,600.54",
+  },
+  {
+    id: 17,
+    img: "/images/btc.png",
+    cryptoName: "Bitcoin",
+    date: "2021-04-07",
+    price: "52,789.12",
+  },
+  {
+    id: 18,
+    img: "/images/eth.png",
+    cryptoName: "Ethereum",
+    date: "2021-04-07",
+    price: "1,840.42",
+  },
+];
+
+export default cryptoInfo;
