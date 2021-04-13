@@ -28,9 +28,21 @@ const LineChart = () => {
           datasets: [
             {
               label: "BTC",
-              data: [33000, 37000, 35500, 36300, 39000, 36700, 34800],
+              data: [
+                33000,
+                34500,
+                32600,
+                33800,
+                35500,
+                37000,
+                35500,
+                36300,
+                39000,
+                36700,
+                34800,
+              ],
               fill: true,
-              backgroundColor: ["rgba( 244, 199, 199, 0.5 )"],
+              backgroundColor: ["rgba( 244, 199, 199, 0.4 )"],
               borderColor: ["rgba(57, 52, 52 )"],
               lineTension: 0,
             },
@@ -49,17 +61,13 @@ const LineChart = () => {
         options={{
           maintainAspectRatio: false,
           scales: {
-            xAxes: [
-              {
-                gridLines: {
-                  offsetGridLines: true,
-                },
-              },
-            ],
             yAxes: [
               {
+                ticks: {
+                  display: false,
+                },
                 gridLines: {
-                  borderDash: [8, 6],
+                  borderDash: [6, 4],
                   color: "#ABA9A9  ",
                 },
               },

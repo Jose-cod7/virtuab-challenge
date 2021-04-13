@@ -1,5 +1,7 @@
 import React from "react";
 import { Col, Image } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBold, faSortUp } from "@fortawesome/free-solid-svg-icons";
 
 const CurrencyBox = (props) => {
   return (
@@ -11,8 +13,25 @@ const CurrencyBox = (props) => {
       <div className="coin-data">
         <p className="coin-price">
           {props.price}
-          <span className="euro">€ </span>
+          <span className="euro">€</span>
         </p>
+        <div className="percentage">
+          <div className="icon">
+            <FontAwesomeIcon
+              className="fa-lg "
+              icon={faSortUp}
+              style={{ color: "#2FF44D " }}
+            />
+          </div>
+          <div>
+            <span
+              className="number-percent"
+              style={{ color: "#2FF44D ", fontSize: "20px" }}
+            >
+              + 16%
+            </span>
+          </div>
+        </div>
       </div>
     </Col>
   );

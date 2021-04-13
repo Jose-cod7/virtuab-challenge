@@ -22,12 +22,33 @@ h2 {
   align-items: center;
 }
 
+.calendar {
+  width: 80px;
+  height: 30px;
+  border: 0;
+  margin: -4px;
+}
+
+.calendar:focus {
+  outline: none;
+}
+
 ::-webkit-calendar-picker-indicator {
+  width: 50px;
+  height: 30px;
   background-image: url(/src/components/calendar.png);
 }
 
 .form-date {
   width: 100%;
+  padding: 5px;
+  border: 1px rgb(69, 69, 70) solid;
+}
+
+.date-display {
+  border: 0;
+  background-color: #ffff;
+  text-align: center;
 }
 
 /**** Cryptocurrencies ****/
@@ -43,7 +64,19 @@ h2 {
 
 .coin-data {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.percentage {
+  display: flex;
+  align-items: flex-end;
+}
+
+.icon {
+  margin-right: 10px;
+  margin-top: 16px;
+  display: flex;
 }
 
 .coin-name {
@@ -95,6 +128,10 @@ h2 {
     display: flex;
     justify-content: center;
   }
+
+  .logo {
+    max-width: 60%;
+  }
   .column-crypto {
     margin-bottom: 2rem;
   }
@@ -110,9 +147,49 @@ h2 {
 
   .form-date {
     padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 40px;
   }
 
+  .calendar {
+    margin-left: -32px;
+    padding-top: 5px;
+  }
   .chart {
     margin-top: 0rem;
+  }
+
+  .date-display {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .calendar {
+    margin-left: -32px;
+    padding-bottom: 5px;
+  }
+
+  .date-display {
+    text-align: center;
+    width: 120px;
+    font-size: x-small;
+    font-size: 11px;
+  }
+
+  .logo {
+    height: 40px;
+    max-width: 55%;
+    margin-left: 25px;
+  }
+
+  .column-3 > h2 {
+    font-size: 15px;
+    text-align: right;
+  }
+  .chart {
+    margin-bottom: 1rem;
   }
 }

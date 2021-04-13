@@ -7,6 +7,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: format(new Date(), "yyyy-MM-dd"),
     price: "59,854.25",
+    percentage: "5%",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: format(new Date(), "yyyy-MM-dd"),
     price: "1,875.21",
+    percentage: "12%",
   },
 
   {
@@ -22,6 +24,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: "2021-04-04",
     price: "46,800.25",
+    percentage: "3%",
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: "2021-04-04",
     price: "1,200.21",
+    percentage: "10%",
   },
   {
     id: 5,
@@ -36,6 +40,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: "2021-04-03",
     price: "40,423.34",
+    percentage: "8%",
   },
   {
     id: 6,
@@ -43,6 +48,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: "2021-04-03",
     price: "1,340.91",
+    percentage: "6%",
   },
   {
     id: 7,
@@ -50,6 +56,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: "2021-04-02",
     price: "42,034.76",
+    percentage: "10%",
   },
   {
     id: 8,
@@ -57,6 +64,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: "2021-04-02",
     price: "1,287.21",
+    percentage: "3%",
   },
   {
     id: 9,
@@ -64,6 +72,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: "2021-04-01",
     price: "44,521.14",
+    percentage: "11%",
   },
   {
     id: 10,
@@ -71,6 +80,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: "2021-04-01",
     price: "1,190.71",
+    percentage: "8%",
   },
   {
     id: 11,
@@ -78,6 +88,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: "2021-03-31",
     price: "45,504.62",
+    percentage: "6%",
   },
   {
     id: 12,
@@ -85,6 +96,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: "2021-03-31",
     price: "1,100.54",
+    percentage: "2%",
   },
   {
     id: 13,
@@ -92,6 +104,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: "2021-04-05",
     price: "48,340.25",
+    percentage: "4%",
   },
   {
     id: 14,
@@ -99,6 +112,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: "2021-04-05",
     price: "1,350.12",
+    percentage: "1%",
   },
   {
     id: 15,
@@ -106,6 +120,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: "2021-04-06",
     price: "50,674.12",
+    percentage: "7%",
   },
   {
     id: 16,
@@ -113,6 +128,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: "2021-04-06",
     price: "1,600.54",
+    percentage: "9%",
   },
   {
     id: 17,
@@ -120,6 +136,7 @@ let cryptoInfo = [
     cryptoName: "Bitcoin",
     date: "2021-04-07",
     price: "52,789.12",
+    percentage: "6%",
   },
   {
     id: 18,
@@ -127,6 +144,7 @@ let cryptoInfo = [
     cryptoName: "Ethereum",
     date: "2021-04-07",
     price: "1,840.42",
+    percentage: "8%",
   },
 ];
 

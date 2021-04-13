@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col, Image, Form } from "react-bootstrap";
 import Logo from "../components/vb_logo.png";
+
 import CryptoData from "./CryptoData";
 import CurrencyBox from "./CurrencyBox";
 import { format } from "date-fns";
@@ -13,21 +14,24 @@ const Cryptocurrencies = () => {
     CryptoData[1].price
   );
 
-  const date = new Date();
-  console.log("this is the date", date);
-
-  const dateFormated = format(date, "iiii");
-  console.log("this is the date", dateFormated);
-
-  /*useEffect(() => {
-    return () => {
-      cleanup;
-    };
-  }, [input]);*/
+  const [dateDisplayString, setDateDisplayString] = useState("");
 
   const handleChange = (e) => {
+    //GEt the date from the datepicker
     const selectedDate = e.target.value;
-    console.log(selectedDate);
+    //console.log("selected day:", selectedDate);
+
+    // Convert date to string in format
+    const selectDateString = new Date(selectedDate);
+
+    const selectedDateFormatString = format(
+      selectDateString,
+      "cccc dd, MMMM, yyyy"
+    );
+
+    console.log("formated date", selectedDateFormatString);
+
+    setDateDisplayString(selectedDateFormatString);
 
     const newBtcvalue = CryptoData.find((current) => {
       const isBitcoin = current.cryptoName === "Bitcoin";
@@ -44,6 +48,7 @@ const Cryptocurrencies = () => {
     });
 
     console.log(newBtcvalue);
+    console.log(newEthvalue);
 
     // TODO better handling of missing data
     setNewPriceBitcoin(newBtcvalue && newBtcvalue.price);
@@ -60,17 +65,18 @@ const Cryptocurrencies = () => {
           </Col>
           <Col className="column-2">
             <Form className="form-date">
-              <Form.Control
-                type="date"
+              <input className="calendar" type="date" onChange={handleChange} />
+              <input
+                className="date-display"
+                type="text"
                 name="verify-date"
-                placeholder="dd-mm-yyyy"
-                onChange={handleChange}
-                required
+                value={dateDisplayString}
+                disabled
               />
             </Form>
           </Col>
           <Col className="column-3">
-            <h2>CHALLENGE</h2>
+            <h2>CHALLENGE </h2>
           </Col>
         </Row>
       </div>
