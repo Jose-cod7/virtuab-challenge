@@ -59,13 +59,14 @@ h2 {
 
 .box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .coin-data {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 10px;
 }
 
 .percentage {
@@ -81,7 +82,8 @@ h2 {
 
 .coin-name {
   margin-bottom: 0;
-  font-weight: bold;
+  font-weight: 400;
+  color: rgb(160, 156, 156);
 }
 
 .coin-price {
@@ -103,9 +105,10 @@ h2 {
 }
 
 .column-crypto {
-  border: 1px rgb(192, 192, 195) solid;
+  border: 0.5px rgb(223, 223, 233) solid;
   border-radius: 6px;
-  box-shadow: 2px 2px 2px 2px rgb(150, 150, 151);
+  box-shadow: 1px 1px 5px 1px rgb(227, 227, 231);
+  margin-right: 30px;
 }
 
 /**** Chart ****/
@@ -115,7 +118,14 @@ h2 {
   border: 1px rgb(192, 192, 195) solid;
   padding: 15px;
   border-radius: 6px;
-  box-shadow: 2px 2px 2px 2px rgb(150, 150, 151);
+  box-shadow: 1px 1px 5px 1px rgb(227, 227, 231);
+  height: 400px;
+}
+
+@media (max-width: 1830px) and (min-width: 768px) {
+  .column-crypto {
+    width: 21% !important;
+  }
 }
 
 @media all and (max-width: 550px) {
