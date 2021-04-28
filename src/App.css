@@ -40,7 +40,7 @@ h2 {
 }
 
 .form-date {
-  width: 100%;
+  width: 80%;
   padding: 5px;
   border: 1px rgb(69, 69, 70) solid;
 }
@@ -114,17 +114,29 @@ h2 {
 /**** Chart ****/
 
 .chart {
-  margin: 2rem 1rem 0 1rem;
+  margin: 2rem 3rem 0 4rem;
   border: 1px rgb(192, 192, 195) solid;
   padding: 15px;
   border-radius: 6px;
   box-shadow: 1px 1px 5px 1px rgb(227, 227, 231);
-  height: 400px;
+  height: 500px;
 }
 
-@media (max-width: 1830px) and (min-width: 768px) {
+@media (max-width: 1830px) and (min-width: 1320px) {
   .column-crypto {
-    width: 21% !important;
+    width: 20% !important;
+  }
+}
+
+@media (max-width: 1320px) and (min-width: 1120px) {
+  .column-crypto {
+    width: 27% !important;
+  }
+}
+
+@media (max-width: 1119px) and (min-width: 768px) {
+  .column-crypto {
+    width: 37% !important;
   }
 }
 
@@ -159,7 +171,7 @@ h2 {
     padding-left: 2rem;
     display: flex;
     flex-direction: row;
-
+    width: 100%; /*added*/
     margin-left: 40px;
   }
 
@@ -168,8 +180,7 @@ h2 {
     padding-top: 5px;
   }
   .chart {
-    margin-top: 0rem;
-    margin-bottom: 1rem;
+    margin: 0px 20px 16px 20px;
   }
 
   .date-display {
@@ -202,5 +213,9 @@ h2 {
   }
   .chart {
     margin-bottom: 1rem;
+  }
+
+  .form-date {
+    width: 100%;
   }
 }
